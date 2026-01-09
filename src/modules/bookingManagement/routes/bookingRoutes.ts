@@ -8,7 +8,7 @@ import { Middleware } from "../../../middlewares/middleware";
 
 const router = express.Router();
 
-router.post("/bookings", createBookingValidation, Middleware, createBooking);
+router.post("/bookings",createBookingValidation, Middleware, createBooking);
 router.get("/bookings", getBookings);
 
 export default router;
